@@ -1,0 +1,39 @@
+site_name: 【ポートフォリオサイト制作】コーディングガイド
+theme:
+  name: "material"
+
+  palette:
+    primary: "Cyan"
+    accent: "deep orange"
+
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+
+extra_css:
+  - "//fonts.googleapis.com/earlyaccess/notosansjp.css"
+  - "//fonts.googleapis.com/css?family=Open+Sans:600,800"
+  - "css/custom.css"
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+  - footnotes
+
+nav:
+  - トップ: index.md
+  - ディレクトリ構成: directory.md
+  - ページのtitleとdescription: title-desc.md
+  - 困った時のTips:
+    - リンク設定: how-to-link.md
+  - 公開手順:
+    - 1. チェックリスト: checklist.md
+    - 2. ファビコンの設定: favicon.md
+    - 3. Github Pagesでの公開のしかた: github-pages.md
+  - 役立ちリンク: links.md
