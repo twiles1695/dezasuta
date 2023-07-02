@@ -15,6 +15,11 @@ extra_css:
   - "//fonts.googleapis.com/css?family=Open+Sans:600,800"
   - "css/custom.css"
 
+extra:
+  analytics:
+    provider: google
+    property: G-MREMGST625
+
 markdown_extensions:
   - admonition
   - codehilite
@@ -31,7 +36,9 @@ nav:
   - ディレクトリ構成: directory.md
   - ページのtitleとdescription: title-desc.md
   - 困った時のTips:
-    - リンク設定: how-to-link.md
+    - ページ遷移のリンク設定: how-to-link.md
+    - 横並びsticky: column-sticky.md
+    - タブによる絞り込み実装: category-tab.md
   - 公開手順:
     - 1. チェックリスト: checklist.md
     - 2. ファビコンの設定: favicon.md

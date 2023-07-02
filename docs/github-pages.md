@@ -1,4 +1,4 @@
 # Github Pagesでの公開のしかた
 
-YouTubeで解説していますのでこちらをご覧ください。
+YouTubeで解説していますのでこちらをご覧ください。<br>
 [https://youtu.be/2OHnEOzUq7o](https://youtu.be/2OHnEOzUq7o)
