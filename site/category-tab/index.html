@@ -36,7 +36,7 @@
     
     
       
-        <title>役立ちリンク - 【ポートフォリオサイト制作】コーディングガイド</title>
+        <title>タブによる絞り込み実装 - 【ポートフォリオサイト制作】コーディングガイド</title>
       
     
     
@@ -114,7 +114,7 @@
               【ポートフォリオサイト制作】コーディングガイド
             </span>
             <span class="md-header-nav__topic">
-              役立ちリンク
+              タブによる絞り込み実装
             </span>
           
         </div>
@@ -216,10 +216,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
       困った時のTips
@@ -259,11 +261,20 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../category-tab/" title="タブによる絞り込み実装" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="タブによる絞り込み実装" class="md-nav__link md-nav__link--active">
       タブによる絞り込み実装
     </a>
+    
   </li>
 
         
@@ -336,20 +347,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" title="役立ちリンク" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../links/" title="役立ちリンク" class="md-nav__link">
       役立ちリンク
     </a>
-    
   </li>
 
     
@@ -381,15 +383,17 @@
               
                 
                 
-                <h1 id="_1">役立ちリンク<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p><a href="https://www.wakuwakubank.com/posts/804-it-naming-convention/">命名規則(キャメルケース, パスカルケース, スネークケース, ケバブケース)</a></p>
-<p><a href="https://qiita.com/manabuyasuda/items/dbb76ed36970bec95470">CSSのクラス名を決めるときに使うリストをつくりました</a></p>
-<p><a href="https://qiita.com/Takuan_Oishii/items/0f0d2c5dc33a9b2d9cb1">一番詳しいCSS設計規則BEMのマニュアル</a></p>
-<p><a href="https://helpx.adobe.com/jp/fonts/using/add-fonts-website.html">Adobe FontをWebで使う手順</a></p>
-<p><a href="https://liginc.co.jp/designer/archives/11313">著作権の書き方</a></p>
-<p><a href="https://form.run/media/contents/form-creation-tools/google-form-embedding/">Google Formを利用したお問い合わせフォームの実装</a><br>
-「自作のフォームと連携してデザインを変える方法」の項目を参照のこと。</p>
-<p><a href="https://flex-box.net/js-scrollin/">スクロールした時にフェードインさせるJS</a></p>
+                <h1 id="_1">タブによる絞り込み実装<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>制作実績一覧ページで、特定のカテゴリーだけを絞り込んで表示したい時の実装方法です。</p>
+<p>data属性を使います。data属性については詳細は以下を参照ください。<br>
+<a href="https://zero-plus.io/media/html-data/">https://zero-plus.io/media/html-data/</a></p>
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="WNgGeXP" data-user="tkm1695" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/tkm1695/pen/WNgGeXP">
+  data属性を使って特定のカテゴリーのみ表示</a> by tkm1695 (<a href="https://codepen.io/tkm1695">@tkm1695</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
                 
                   
                 
@@ -410,7 +414,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../github-pages/" title="3. Github Pagesでの公開のしかた" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../column-sticky/" title="横並びsticky" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -419,11 +423,25 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                3. Github Pagesでの公開のしかた
+                横並びsticky
               </span>
             </div>
           </a>
         
+        
+          <a href="../checklist/" title="1. チェックリスト" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                1. チェックリスト
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>
