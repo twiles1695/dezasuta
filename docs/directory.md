@@ -25,7 +25,8 @@ portfolio
 ├── works … 制作実績一覧ページ
 └── thanks.html … お問い合わせのサンクスページ
 ```
-<img src="../images/directory.png" width="273" alt="ディレクトリ図">
+
+![ディレクトリ図](img/directory.png)
 
 ## 下層ページの構成
 

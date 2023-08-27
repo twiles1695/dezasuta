@@ -33,6 +33,9 @@ markdown_extensions:
 
 nav:
   - トップ: index.md
+  - よくある質問:
+    - 左右中央配置の使い分け: center.md
+    - widthとmax-widthの使い分け: width-max-width.md
   - ディレクトリ構成: directory.md
   - ページのtitleとdescription: title-desc.md
   - 困った時のTips:
