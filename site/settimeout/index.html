@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../title-desc/">
+        <link rel="prev" href="../category-tab/">
       
       
-        <link rel="next" href="../background-object/">
+        <link rel="next" href="../checklist/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>ページ遷移のリンク設定 - 【ポートフォリオサイト制作】コーディングガイド</title>
+        <title>タイマー機能 - 【ポートフォリオサイト制作】コーディングガイド</title>
       
     
     
@@ -120,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ページ遷移のリンク設定
+              タイマー機能
             
           </span>
         </div>
@@ -406,29 +406,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    ページ遷移のリンク設定
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../how-to-link/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -437,44 +417,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      トップページから下層ページへのリンク
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      下層ページから他のページへのリンク
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -544,9 +486,18 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../settimeout/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -555,6 +506,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -709,32 +661,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      トップページから下層ページへのリンク
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      下層ページから他のページへのリンク
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -748,27 +674,24 @@
                   
 
 
-<h1 id="_1">ページ遷移のリンク設定<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>トップページから下層ページへリンクする、または下層ページから他のページにリンクする際の書き方です。</p>
-<h2 id="_2">トップページから下層ページへのリンク<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="cm">&lt;!-- 下層ディレクトリのindex.htmlは省略することができます --&gt;</span>
-<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;./about&quot;</span><span class="p">&gt;</span>自己紹介<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;./works&quot;</span><span class="p">&gt;</span>制作実績一覧<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<h1 id="_1">タイマー機能<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>ページを読み込んで〜秒後に処理を実行したいといった場合、JavaScriptの<code>setTimeout()</code>関数が使えます。</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="w">  </span><span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
 
-<span class="cm">&lt;!-- index.htmlでないページはファイル名まで指定します --&gt;</span>
-<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;./works/work1.html&quot;</span><span class="p">&gt;</span>制作実績詳細1<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="c1">// タイマー機能</span>
+<span class="w">    </span><span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+<span class="w">      </span><span class="c1">// ページが読み込まれて3秒後にここに記述された処理が発動します。</span>
+<span class="w">      </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;3秒経過&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="mf">3000</span><span class="p">);</span>
+
+<span class="w">  </span><span class="p">});</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </code></pre></div>
-<h2 id="_3">下層ページから他のページへのリンク<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>下層ページから他のページへリンクする際は、階層を上がる必要があるため、指定のしかたに注意が必要です。
-例えば<code>work1.html</code>において各ページの指定のしかたは以下です。</p>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;../&quot;</span><span class="p">&gt;</span>トップページ<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>  <span class="cm">&lt;!-- ../index.htmlとしてもOKです --&gt;</span>
-<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;../about&quot;</span><span class="p">&gt;</span>自己紹介<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;../works&quot;</span><span class="p">&gt;</span>制作実績一覧<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-</code></pre></div>
-<div class="admonition point">
-<p class="admonition-title">Point</p>
-<p>パスの頭に<code>../</code>を付ける。</p>
-</div>
+<p><code>3000</code>の箇所をお好みの時間に変更ください（3000ミリ秒 = 3秒）。</p>
+<p><code>console.log("3秒経過");</code>の箇所をお好みの処理に書き換えてください。</p>
+<p>参考:<br>
+<a href="https://www.sejuku.net/blog/24540">【JavaScript入門】setTimeoutの使い方とサンプル事例まとめ！</a></p>
 
 
   

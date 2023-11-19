@@ -13,4 +13,8 @@
 [Google Formを利用したお問い合わせフォームの実装](https://form.run/media/contents/form-creation-tools/google-form-embedding/)<br>
 「自作のフォームと連携してデザインを変える方法」の項目を参照のこと。
 
+[HTML5のフォームバリデーション](https://www.newt.so/docs/form-app-validation-with-html5-form)
+
 [スクロールした時にフェードインさせるJS](https://flex-box.net/js-scrollin/)
+
+[【jQuery】ローディングを初回のみ表示 (ページ遷移や2回目以降は表示しない)](https://web-creates.com/code/jquery-loading-sessionstorage/)
