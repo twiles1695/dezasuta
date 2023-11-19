@@ -1,13 +1,13 @@
 site_name: 【ポートフォリオサイト制作】コーディングガイド
 theme:
   name: "material"
+  custom_dir: overrides
 
   palette:
-    primary: "Cyan"
-    accent: "deep orange"
+    primary: cyan
+    accent: deep orange
 
   features:
-    - navigation.tabs
     - navigation.tabs.sticky
 
 extra_css:
@@ -19,6 +19,20 @@ extra:
   analytics:
     provider: google
     property: G-MREMGST625
+    feedback:
+      title: 役に立ちましたか?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            フィードバックをどうもありがとうございます！
+        - icon: material/thumb-down-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            フィードバックをどうもありがとうございます！
+            改善点がある場合、<a href="mailto:a@kotodute.jp" target="_blank" rel="noopener">メール</a>よりご連絡いただけますと幸いです。
 
 markdown_extensions:
   - admonition
